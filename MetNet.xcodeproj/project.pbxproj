@@ -14,6 +14,7 @@
 		D02AEFDB1E32F3430090F030 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D02AEFD91E32F3430090F030 /* LaunchScreen.storyboard */; };
 		D02AEFE61E32F3430090F030 /* MetNetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02AEFE51E32F3430090F030 /* MetNetTests.swift */; };
 		D02AEFF11E32F3430090F030 /* MetNetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02AEFF01E32F3430090F030 /* MetNetUITests.swift */; };
+		D02AEFFF1E330F510090F030 /* CompoundDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02AEFFE1E330F510090F030 /* CompoundDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		D02AEFEC1E32F3430090F030 /* MetNetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetNetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D02AEFF01E32F3430090F030 /* MetNetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetNetUITests.swift; sourceTree = "<group>"; };
 		D02AEFF21E32F3430090F030 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D02AEFFE1E330F510090F030 /* CompoundDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompoundDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +99,13 @@
 		D02AEFCF1E32F3430090F030 /* MetNet */ = {
 			isa = PBXGroup;
 			children = (
-				D02AEFD01E32F3430090F030 /* AppDelegate.swift */,
-				D02AEFD21E32F3430090F030 /* ViewController.swift */,
-				D02AEFD41E32F3430090F030 /* Main.storyboard */,
 				D02AEFD71E32F3430090F030 /* Assets.xcassets */,
-				D02AEFD91E32F3430090F030 /* LaunchScreen.storyboard */,
+				D02AEFD01E32F3430090F030 /* AppDelegate.swift */,
 				D02AEFDC1E32F3430090F030 /* Info.plist */,
+				D02AEFD91E32F3430090F030 /* LaunchScreen.storyboard */,
+				D02AEFD41E32F3430090F030 /* Main.storyboard */,
+				D02AEFD21E32F3430090F030 /* ViewController.swift */,
+				D02AEFFE1E330F510090F030 /* CompoundDetails.swift */,
 			);
 			path = MetNet;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D02AEFFF1E330F510090F030 /* CompoundDetails.swift in Sources */,
 				D02AEFD31E32F3430090F030 /* ViewController.swift in Sources */,
 				D02AEFD11E32F3430090F030 /* AppDelegate.swift in Sources */,
 			);

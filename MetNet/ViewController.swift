@@ -8,18 +8,53 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIPopoverPresentationControllerDelegate {
 
+    
+    @IBOutlet weak var bkgrdScrollView: UIScrollView!
+    @IBOutlet var compoundButtons: [UIButton]!
+    
+    var compoundSelectedTag = Int()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        bkgrdScrollView.contentSize.height = 1000
+        bkgrdScrollView.contentSize.width = 1000
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func compoundButtonTapped(_ sender: Any) {
 
-
+        self.compoundSelectedTag = (sender as AnyObject).tag
+        print("here")
+        performSegue(withIdentifier: "toCompoundDetailsSegue", sender: self)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toCompoundDetailsSegue" {
+            let destViewController : CompoundDetails = segue.destination as! CompoundDetails
+            let controller = destViewController.popoverPresentationController
+            if controller != nil {
+                controller?.delegate = self
+            }
+            destViewController.compoundSelectedTag = self.compoundSelectedTag
+        }
+    }
+    
+    // don't allow modal segue, force a popover segue
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .none
+    }
+    
+    
 }
+
 
