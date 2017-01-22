@@ -19,8 +19,8 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        bkgrdScrollView.contentSize.height = 1000
-        bkgrdScrollView.contentSize.width = 1000
+        bkgrdScrollView.contentSize.height = 1500
+        bkgrdScrollView.contentSize.width = 1500
         
         
     }
@@ -33,7 +33,6 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
     @IBAction func compoundButtonTapped(_ sender: Any) {
 
         self.compoundSelectedTag = (sender as AnyObject).tag
-        print("here")
         performSegue(withIdentifier: "toCompoundDetailsSegue", sender: self)
         
     }
