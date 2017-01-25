@@ -8,11 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIPopoverPresentationControllerDelegate {
+class ViewController: UIViewController, UIPopoverPresentationControllerDelegate, UIScrollViewDelegate {
 
     
     @IBOutlet weak var bkgrdScrollView: UIScrollView!
     @IBOutlet var compoundButtons: [UIButton]!
+    @IBOutlet var fullView: UIView!
     
     var compoundSelectedTag = Int()
     
@@ -21,7 +22,8 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         
         bkgrdScrollView.contentSize.height = 1500
         bkgrdScrollView.contentSize.width = 1500
-        
+        self.bkgrdScrollView.minimumZoomScale = 0.5
+        self.bkgrdScrollView.maximumZoomScale = 4
         
     }
 
@@ -31,10 +33,10 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
     }
     
     @IBAction func compoundButtonTapped(_ sender: Any) {
-
-        self.compoundSelectedTag = (sender as AnyObject).tag
-        performSegue(withIdentifier: "toCompoundDetailsSegue", sender: self)
-        
+        if (sender as AnyObject).tag != 0 {
+            self.compoundSelectedTag = (sender as AnyObject).tag
+            performSegue(withIdentifier: "toCompoundDetailsSegue", sender: self)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -51,6 +53,10 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
     // don't allow modal segue, force a popover segue
     func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
         return .none
+    }
+    
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return self.fullView
     }
     
     
