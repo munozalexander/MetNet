@@ -39,6 +39,15 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate,
         }
     }
     
+    @IBAction func infoButtonTapped(_ sender: Any) {
+        let url = URL(string: "https://munozalexander.github.io/MetNet/")!
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toCompoundDetailsSegue" {
             let destViewController : CompoundDetails = segue.destination as! CompoundDetails
@@ -54,11 +63,6 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate,
     func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
         return .none
     }
-    
-    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
-        return self.fullView
-    }
-    
     
 }
 

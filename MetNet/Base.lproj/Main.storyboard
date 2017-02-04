@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -25,7 +25,7 @@
                                 <rect key="frame" x="666" y="374" width="1" height="1"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfA-eZ-Qka">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfA-eZ-Qka">
                                 <rect key="frame" x="-1" y="-1" width="1501" height="1501"/>
                                 <subviews>
                                     <button opaque="NO" tag="121" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfz-mi-W9f">
@@ -155,7 +155,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="single_right"/>
                                         <connections>
-                                            <action selector="compoundButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6bc-oi-EHg"/>
+                                            <action selector="compoundButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bGY-wY-xSm"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="97" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcv-3Q-pfd">
@@ -380,6 +380,9 @@
                                         <state key="normal" title="FA-CoA (mito)">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="compoundButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I6d-hG-063"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="34" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qD0-Xj-dZB">
                                         <rect key="frame" x="340" y="499" width="79" height="30"/>
@@ -717,11 +720,14 @@
                                         <rect key="frame" x="84" y="1265" width="49" height="49"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="single_diag_upleft"/>
+                                        <connections>
+                                            <action selector="compoundButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ScZ-4L-r81"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="76" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODq-LJ-bwM">
                                         <rect key="frame" x="84" y="1091" width="49" height="49"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="single_diag_upright"/>
+                                        <state key="normal" image="double_diag2"/>
                                         <connections>
                                             <action selector="compoundButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4K8-iz-GhR"/>
                                         </connections>
@@ -807,7 +813,7 @@
                                     <button opaque="NO" tag="74" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0I0-kr-je0">
                                         <rect key="frame" x="60" y="1179" width="35" height="49"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="single_up"/>
+                                        <state key="normal" image="double_vertical"/>
                                         <connections>
                                             <action selector="compoundButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rga-0L-0cQ"/>
                                         </connections>
@@ -1169,9 +1175,13 @@
                                     <constraint firstAttribute="height" constant="22" id="eZ4-IJ-D9m"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="ngo-io-mYl"/>
                                 </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="infoButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5VX-Ml-0Fz"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.35686274509999999" green="0.54117647059999996" blue="0.90196078430000004" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Gcl-4B-nDg" secondAttribute="bottom" id="Cgs-HC-X8W"/>
                             <constraint firstItem="mfA-eZ-Qka" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="Ixd-17-QNj"/>
@@ -1280,6 +1290,7 @@
         <image name="complex_8" width="1000" height="500"/>
         <image name="complex_9" width="2000" height="2000"/>
         <image name="double_diag1" width="100" height="100"/>
+        <image name="double_diag2" width="100" height="100"/>
         <image name="double_horizontal" width="100" height="100"/>
         <image name="double_vertical" width="100" height="100"/>
         <image name="single_diag_downleft" width="100" height="100"/>

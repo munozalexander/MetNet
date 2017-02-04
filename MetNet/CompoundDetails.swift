@@ -18,13 +18,13 @@ class CompoundDetails: UIViewController {
     
     let compoundsInfo = [
         1 : (title: "Information",
-             description: "Here's how to use the app!"),
+             description: "MetNet is a basic network of human metabolism, including key enzymes, intermediates, and hormonal influences. To learn more about a specific metabolic compound, tap its green box. Tap on any arrow to learn about the enzyme that catalyzes the metabolic conversion and its hormonal influences.\n\nIf you would like to use MetNet in a teaching environment please visit our website at www.metnet.github.io!"),
         2 : (title: "Galactose",
              description: "Galactose is a monosaccharide hexose that is made from the catabolism of lactose into galactose and glucose. \n\nReactivity: Galactose undergoes phosphorylation by galactokinase, and then galactose-1-phosphate uridyl transferase and an epimerase finish the conversion of galactose to glucose."),
-        3 : (title: "Glucose",
-             description: "Glucose is a monosaccharide hexose. The body tries to maintain homeostatic levels of blood glucose at about 5.5 mM (100 mg/dL).\n\nSynthesis: Blood glucose can be introduced by -\n(1) the breakdown of sugars: fructose, galactose, maltose, and sucrose catabolism for example, will all yield glucose monomers\n(2) glycogenolysis: during the post-absorptive state, the intial response of decreasing blood suguar is for the liver to start catabolizing glycogen reserves to release glucose into the blood stream\n(3) gluconeogenesis: the brain largely prefers glucose as a source of energy. As a result if blood glucose levels run low, the liver and renal cortex will compensate by performing gluconeogenesis and releasing the newly formed glucose to the blood\n(4) uptake from serum: hepatocytes and pancreatic islet beta cells have a GLUT2 low-affinity glucose receptor such that they uptake glucose proportional to the serum level, on the other hand adipocytes and muscle cells have a GLUT4 high-affinity glucose receptor such that they import glucose whenever available.\n\nReactivity: Glucose "),
-        4 : (title: "4",
+        3 : (title: "3",
              description: "Here's some info"),
+        4 : (title: "Glucose",
+             description: "Glucose is a monosaccharide hexose. The body tries to maintain homeostatic levels of blood glucose at about 5.5 mM (100 mg/dL).\n\nSynthesis: Blood glucose can be introduced by -\n(1) the breakdown of sugars: fructose, galactose, maltose, and sucrose catabolism for example, will all yield glucose monomers\n(2) glycogenolysis: during the post-absorptive state, the intial response of decreasing blood suguar is for the liver to start catabolizing glycogen reserves to release glucose into the blood stream\n(3) gluconeogenesis: the brain largely prefers glucose as a source of energy. As a result if blood glucose levels run low, the liver and renal cortex will compensate by performing gluconeogenesis and releasing the newly formed glucose to the blood\n(4) uptake from serum: hepatocytes and pancreatic islet beta cells have a GLUT2 low-affinity glucose receptor such that they uptake glucose proportional to the serum level, on the other hand adipocytes and muscle cells have a GLUT4 high-affinity glucose receptor such that they import glucose whenever available.\n\nReactivity: Glucose "),
         5 : (title: "5",
              description: "Here's some info"),
         6 : (title: "6",
