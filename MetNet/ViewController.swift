@@ -40,17 +40,15 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate,
     }
     
     @IBAction func infoButtonTapped(_ sender: Any) {
-        let url = URL(string: "https://munozalexander.github.io/MetNet/")!
-        if #available(iOS 10.0, *) {
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
-        } else {
-            UIApplication.shared.openURL(url)
-        }
+        self.performSegue(withIdentifier: "toInfoMenuSegue", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toCompoundDetailsSegue" {
             let destViewController : CompoundDetails = segue.destination as! CompoundDetails
+            let screenSize = UIScreen.main.bounds
+            let screenHeight = screenSize.height
+            destViewController.preferredContentSize = CGSize(width: 340, height: screenHeight)
             let controller = destViewController.popoverPresentationController
             if controller != nil {
                 controller?.delegate = self
@@ -60,7 +58,7 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate,
     }
     
     // don't allow modal segue, force a popover segue
-    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+    func adaptivePresentationStyle(for controller: UIPresentationController, traitCollection: UITraitCollection) -> UIModalPresentationStyle {
         return .none
     }
     

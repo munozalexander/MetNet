@@ -15,6 +15,11 @@
 		D02AEFE61E32F3430090F030 /* MetNetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02AEFE51E32F3430090F030 /* MetNetTests.swift */; };
 		D02AEFF11E32F3430090F030 /* MetNetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02AEFF01E32F3430090F030 /* MetNetUITests.swift */; };
 		D02AEFFF1E330F510090F030 /* CompoundDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02AEFFE1E330F510090F030 /* CompoundDetails.swift */; };
+		D0609D6E1EE6CFD7003848B9 /* InfoMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0609D6D1EE6CFD7003848B9 /* InfoMenu.swift */; };
+		D0609D741EE6D68D003848B9 /* glucose.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D0609D701EE6D68D003848B9 /* glucose.pdf */; };
+		D0609D751EE6D68D003848B9 /* glycogen.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D0609D711EE6D68D003848B9 /* glycogen.pdf */; };
+		D0609D761EE6D68D003848B9 /* lipids.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D0609D721EE6D68D003848B9 /* lipids.pdf */; };
+		D0609D771EE6D68D003848B9 /* tca.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D0609D731EE6D68D003848B9 /* tca.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		D02AEFF01E32F3430090F030 /* MetNetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetNetUITests.swift; sourceTree = "<group>"; };
 		D02AEFF21E32F3430090F030 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D02AEFFE1E330F510090F030 /* CompoundDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompoundDetails.swift; sourceTree = "<group>"; };
+		D0609D6D1EE6CFD7003848B9 /* InfoMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoMenu.swift; sourceTree = "<group>"; };
+		D0609D701EE6D68D003848B9 /* glucose.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = glucose.pdf; path = "../../../../Other/MCAT/Metabolism Networks/PDF/glucose.pdf"; sourceTree = "<group>"; };
+		D0609D711EE6D68D003848B9 /* glycogen.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = glycogen.pdf; path = "../../../../Other/MCAT/Metabolism Networks/PDF/glycogen.pdf"; sourceTree = "<group>"; };
+		D0609D721EE6D68D003848B9 /* lipids.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = lipids.pdf; path = "../../../../Other/MCAT/Metabolism Networks/PDF/lipids.pdf"; sourceTree = "<group>"; };
+		D0609D731EE6D68D003848B9 /* tca.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = tca.pdf; path = "../../../../Other/MCAT/Metabolism Networks/PDF/tca.pdf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,7 @@
 		D02AEFCF1E32F3430090F030 /* MetNet */ = {
 			isa = PBXGroup;
 			children = (
+				D0609D6F1EE6D662003848B9 /* staticPdfs */,
 				D02AEFD71E32F3430090F030 /* Assets.xcassets */,
 				D02AEFD01E32F3430090F030 /* AppDelegate.swift */,
 				D02AEFDC1E32F3430090F030 /* Info.plist */,
@@ -106,6 +117,7 @@
 				D02AEFD41E32F3430090F030 /* Main.storyboard */,
 				D02AEFD21E32F3430090F030 /* ViewController.swift */,
 				D02AEFFE1E330F510090F030 /* CompoundDetails.swift */,
+				D0609D6D1EE6CFD7003848B9 /* InfoMenu.swift */,
 			);
 			path = MetNet;
 			sourceTree = "<group>";
@@ -126,6 +138,17 @@
 				D02AEFF21E32F3430090F030 /* Info.plist */,
 			);
 			path = MetNetUITests;
+			sourceTree = "<group>";
+		};
+		D0609D6F1EE6D662003848B9 /* staticPdfs */ = {
+			isa = PBXGroup;
+			children = (
+				D0609D701EE6D68D003848B9 /* glucose.pdf */,
+				D0609D711EE6D68D003848B9 /* glycogen.pdf */,
+				D0609D721EE6D68D003848B9 /* lipids.pdf */,
+				D0609D731EE6D68D003848B9 /* tca.pdf */,
+			);
+			name = staticPdfs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,7 +261,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0609D751EE6D68D003848B9 /* glycogen.pdf in Resources */,
 				D02AEFDB1E32F3430090F030 /* LaunchScreen.storyboard in Resources */,
+				D0609D741EE6D68D003848B9 /* glucose.pdf in Resources */,
+				D0609D771EE6D68D003848B9 /* tca.pdf in Resources */,
+				D0609D761EE6D68D003848B9 /* lipids.pdf in Resources */,
 				D02AEFD81E32F3430090F030 /* Assets.xcassets in Resources */,
 				D02AEFD61E32F3430090F030 /* Main.storyboard in Resources */,
 			);
@@ -267,6 +294,7 @@
 			files = (
 				D02AEFFF1E330F510090F030 /* CompoundDetails.swift in Sources */,
 				D02AEFD31E32F3430090F030 /* ViewController.swift in Sources */,
+				D0609D6E1EE6CFD7003848B9 /* InfoMenu.swift in Sources */,
 				D02AEFD11E32F3430090F030 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +544,7 @@
 				D02AEFF71E32F3430090F030 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D02AEFF81E32F3430090F030 /* Build configuration list for PBXNativeTarget "MetNetTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +553,7 @@
 				D02AEFFA1E32F3430090F030 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D02AEFFB1E32F3430090F030 /* Build configuration list for PBXNativeTarget "MetNetUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +562,7 @@
 				D02AEFFD1E32F3430090F030 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
