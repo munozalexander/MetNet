@@ -1,5 +1,5 @@
 # App Description
-MetNet is an iPhone app that shows an interactive network of human metabolism, including key enzymes, intermediates, and hormonal influences! MetNet currently contains metabolic and anabolic pathways in glycolysis, gluconeogenesis, lipolysis, lipogenesis, TCA cycle, glycogenesis, glycogenolysis, Pentose Phosphate Pathway, ketogenesis, ketolysis, and cholesterol metabolism. At MetNet, we really wanted to emphasize the interdependence of many very different metabolic pathways, we hope you enjoy!
+MetNet is an iPhone app that shows an interactive network of human metabolism, including key enzymes, intermediates, and hormonal influences! MetNet currently contains catabolic and anabolic pathways in glycolysis, gluconeogenesis, lipolysis, lipogenesis, TCA cycle, glycogenesis, glycogenolysis, Pentose Phosphate Pathway, ketogenesis, ketolysis, and cholesterol metabolism. At MetNet, we really wanted to emphasize the interdependence of many very different metabolic pathways, we hope you enjoy!
 
 # How to use MetNet
 MetNet is available for iOS and can be downloaded from the iPhone App Store. Once inside the app, to learn more about a specific metabolic compound, tap its green box. Tap on any arrow to learn about the enzyme that catalyzes that metabolic conversion and its hormonal influences.
