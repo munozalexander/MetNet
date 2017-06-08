@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="landscape">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -1306,10 +1307,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Uqu-w6-YYn">
-                                <rect key="frame" x="20" y="95" width="244" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Uqu-w6-YYn">
+                                <rect key="frame" x="20" y="89" width="250" height="70"/>
                                 <color key="backgroundColor" red="0.0" green="0.75294117650000003" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="4qM-Ub-BXA"/>
+                                    <constraint firstAttribute="height" constant="70" id="q0k-FB-B6K"/>
+                                </constraints>
                                 <state key="normal" title="Glucose">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1317,10 +1321,13 @@
                                     <action selector="glucoseButtonTapped:" destination="51C-E1-BYw" eventType="touchUpInside" id="fGm-mf-yI5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="1i9-vb-oNE">
-                                <rect key="frame" x="20" y="190" width="244" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="1i9-vb-oNE">
+                                <rect key="frame" x="20" y="184" width="250" height="70"/>
                                 <color key="backgroundColor" red="0.0" green="0.75294117650000003" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="OGb-d8-ewx"/>
+                                    <constraint firstAttribute="width" constant="250" id="aVX-M1-CJm"/>
+                                </constraints>
                                 <state key="normal" title="TCA">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1328,10 +1335,12 @@
                                     <action selector="tcaButtonTapped:" destination="51C-E1-BYw" eventType="touchUpInside" id="N28-oA-ZCc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="JTc-kG-L2I">
-                                <rect key="frame" x="20" y="315" width="627" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="JTc-kG-L2I">
+                                <rect key="frame" x="20" y="310" width="627" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="0.75294117650000003" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="rp2-oh-J3v"/>
+                                </constraints>
                                 <state key="normal" title="App Website">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1339,10 +1348,13 @@
                                     <action selector="websiteButtonTapped:" destination="51C-E1-BYw" eventType="touchUpInside" id="F0A-Oo-1xF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="nmR-JB-zDk">
-                                <rect key="frame" x="403" y="190" width="244" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="nmR-JB-zDk">
+                                <rect key="frame" x="397" y="184" width="250" height="70"/>
                                 <color key="backgroundColor" red="0.0" green="0.75294117650000003" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="LqP-bY-Pld"/>
+                                    <constraint firstAttribute="height" constant="70" id="wKI-0m-kI8"/>
+                                </constraints>
                                 <state key="normal" title="Lipid">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1350,10 +1362,13 @@
                                     <action selector="lipidButtonTapped:" destination="51C-E1-BYw" eventType="touchUpInside" id="cJZ-Hl-htT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="anM-dC-tWj">
-                                <rect key="frame" x="403" y="95" width="244" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="anM-dC-tWj">
+                                <rect key="frame" x="397" y="89" width="250" height="70"/>
                                 <color key="backgroundColor" red="0.0" green="0.75294117650000003" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="8Lh-jd-1Ne"/>
+                                    <constraint firstAttribute="height" constant="70" id="acR-5o-urg"/>
+                                </constraints>
                                 <state key="normal" title="Glycogen">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1363,6 +1378,19 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.35686274509999999" green="0.54117647059999996" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Uqu-w6-YYn" firstAttribute="leading" secondItem="BJI-td-zuT" secondAttribute="leadingMargin" id="7JJ-A9-05C"/>
+                            <constraint firstItem="nmR-JB-zDk" firstAttribute="top" secondItem="anM-dC-tWj" secondAttribute="bottom" constant="25" id="ECZ-OM-iZd"/>
+                            <constraint firstItem="1i9-vb-oNE" firstAttribute="top" secondItem="Uqu-w6-YYn" secondAttribute="bottom" constant="25" id="G46-jq-SGz"/>
+                            <constraint firstItem="JTc-kG-L2I" firstAttribute="leading" secondItem="BJI-td-zuT" secondAttribute="leadingMargin" id="I1D-A8-TSI"/>
+                            <constraint firstItem="anM-dC-tWj" firstAttribute="top" secondItem="sNC-8m-ZwK" secondAttribute="bottom" constant="25" id="LVy-7Z-ci7"/>
+                            <constraint firstItem="1i9-vb-oNE" firstAttribute="leading" secondItem="BJI-td-zuT" secondAttribute="leadingMargin" id="Rdl-qm-TRe"/>
+                            <constraint firstItem="Uqu-w6-YYn" firstAttribute="top" secondItem="sNC-8m-ZwK" secondAttribute="bottom" constant="25" id="TZT-eb-JAS"/>
+                            <constraint firstItem="anM-dC-tWj" firstAttribute="trailing" secondItem="BJI-td-zuT" secondAttribute="trailingMargin" id="hmF-3E-Q6g"/>
+                            <constraint firstItem="bhn-HT-Ttt" firstAttribute="top" secondItem="JTc-kG-L2I" secondAttribute="bottom" constant="25" id="l6p-8c-Whw"/>
+                            <constraint firstItem="JTc-kG-L2I" firstAttribute="trailing" secondItem="BJI-td-zuT" secondAttribute="trailingMargin" id="mQt-JA-BXm"/>
+                            <constraint firstItem="nmR-JB-zDk" firstAttribute="trailing" secondItem="BJI-td-zuT" secondAttribute="trailingMargin" id="qDD-Um-l8o"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Static Subnetworks" id="ywE-1S-8eL">
                         <barButtonItem key="leftBarButtonItem" style="done" systemItem="done" id="NQU-Dz-5G8">

@@ -219,7 +219,7 @@
 				TargetAttributes = {
 					D02AEFCC1E32F3430090F030 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 2XSMD8XKZB;
+						DevelopmentTeam = K3B5WRUMDL;
 						ProvisioningStyle = Automatic;
 					};
 					D02AEFE01E32F3430090F030 = {
@@ -445,10 +445,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2XSMD8XKZB;
+				DEVELOPMENT_TEAM = K3B5WRUMDL;
 				INFOPLIST_FILE = MetNet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.AlexanderMunoz.MetNet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlexanderMunoz.MetNetApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -458,10 +458,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2XSMD8XKZB;
+				DEVELOPMENT_TEAM = K3B5WRUMDL;
 				INFOPLIST_FILE = MetNet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.AlexanderMunoz.MetNet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlexanderMunoz.MetNetApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
