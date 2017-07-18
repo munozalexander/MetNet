@@ -22,11 +22,11 @@ If you are interested in using MetNet as a teaching tool in your classroom, plea
 
 # Screenshots
 ***MetNet shows key metabolic intermediates attached by enzymatic arrows:***
-![screenshot1](https://d3uepj124s5rcx.cloudfront.net/items/3h2m1v1l3d0i433m2q2F/screenshot1.png?v=6ba97b1e)
+![screenshot1](https://d26dzxoao6i3hh.cloudfront.net/items/3h2m1v1l3d0i433m2q2F/screenshot1.png?v=6ba97b1e)
 ***Tap any arrow to see a description of the enzyme's properties, cofactors, and hormonal influences. Tap any green box to see a description of the compound's structure, synthesis, and reactivity:***
-![screenshot2](https://d3uepj124s5rcx.cloudfront.net/items/2G3Z3E0D362O172X0P1C/screenshot2.png?v=e81474ef)
+![screenshot2](https://d26dzxoao6i3hh.cloudfront.net/items/2G3Z3E0D362O172X0P1C/screenshot2.png?v=e81474ef)
 ***Tap the info button on the bottom-left corner to examine hormone-labeled subnetworks:***
-![screenshot3](https://d2ppvlu71ri8gs.cloudfront.net/items/0w3V3A2U1e003Q451I28/screenshot3.png?v=a4a8e218)
+![screenshot3](https://d26dzxoao6i3hh.cloudfront.net/items/0w3V3A2U1e003Q451I28/screenshot3.png?v=a4a8e218)
 
 # Contact
 Contact us with any questions, comments, or suggestions via [this form](https://goo.gl/forms/4T8HIbKcxiWdPMgC3). We will reply as soon as possible!
