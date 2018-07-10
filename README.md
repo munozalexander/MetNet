@@ -18,7 +18,7 @@ To view subnetworks (for example, a network with only glycogen metabolism), tap 
 
 
 # Teaching with MetNet
-If you are interested in using MetNet as a teaching tool in your classroom, please contact us [here](https://goo.gl/forms/4T8HIbKcxiWdPMgC3). We will do everything we can to facilitate the process!
+If you are interested in using MetNet as a teaching tool in your classroom, please contact us [here](https://goo.gl/forms/eT7fSQtjLcBnIuUh2). We will do everything we can to facilitate the process!
 
 # Screenshots
 ***MetNet shows key metabolic intermediates attached by enzymatic arrows:***
@@ -29,4 +29,4 @@ If you are interested in using MetNet as a teaching tool in your classroom, plea
 ![screenshot3](https://d26dzxoao6i3hh.cloudfront.net/items/0w3V3A2U1e003Q451I28/screenshot3.png?v=a4a8e218)
 
 # Contact
-Contact us with any questions, comments, or suggestions via [this form](https://goo.gl/forms/4T8HIbKcxiWdPMgC3). We will reply as soon as possible!
+Contact us with any questions, comments, or suggestions via [this form](https://goo.gl/forms/eT7fSQtjLcBnIuUh2). We will reply as soon as possible!
